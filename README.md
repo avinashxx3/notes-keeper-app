@@ -13,7 +13,7 @@ This is a simple flutter app designed to store notes on any android smartphone.
 - An Android device with the SDK version being 21 or greater.
 - A platform to build and run the app remotely.
 
-# 
+## 
 
 This app was designed for the purpose of learning and is not intended to be used professionally.
 This app is not bug free and/or totally stable.
