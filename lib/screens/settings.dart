@@ -7,6 +7,7 @@ import 'home.dart';
 import 'notes.dart';
 
 class SettingsPage extends StatefulWidget {
+
   final CounterStorage storage;
   final isDarkModeTrue;
   final bool isHomePageBackPage;
@@ -24,6 +25,7 @@ class SettingsPage extends StatefulWidget {
 }
 
 class _SettingsPageState extends State<SettingsPage> {
+
   CustomColors customColors = CustomColors();
 
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();

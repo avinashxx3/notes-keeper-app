@@ -7,6 +7,7 @@ import 'home.dart';
 import 'notes.dart';
 
 class SignInPage extends StatefulWidget {
+
   SignInPage({@required this.isDarkModeTrue, @required this.storage});
 
   final isDarkModeTrue;
@@ -17,6 +18,7 @@ class SignInPage extends StatefulWidget {
 }
 
 class _SignInPageState extends State<SignInPage> {
+
   final AuthService _auth = AuthService();
   CustomColors customColors = CustomColors();
 

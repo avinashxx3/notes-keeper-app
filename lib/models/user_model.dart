@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
-
 class CustomUser {
+
   String userID;
   String userName;
 
@@ -11,6 +10,7 @@ class CustomUser {
 }
 
 class UserData {
+
   final String noteID;
   final String noteHeading;
   final String noteContent;

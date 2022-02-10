@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 
 class CustomColors extends ChangeNotifier{
+
+  //declare initially light theme values
   Color backgroundColor = Colors.blue[500];
   Color textFieldColor = Colors.white;
   Color textFieldBorderColor = Colors.grey[200];

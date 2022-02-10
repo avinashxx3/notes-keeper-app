@@ -6,6 +6,7 @@ import 'package:notes_keeper/theme_data/theme_data.dart';
 import 'home.dart';
 
 class RegisterPage extends StatefulWidget {
+
   RegisterPage({@required this.isDarkModeTrue, @required this.storage});
 
   final isDarkModeTrue;
@@ -16,6 +17,7 @@ class RegisterPage extends StatefulWidget {
 }
 
 class _RegisterPageState extends State<RegisterPage> {
+  
   CustomColors customColors = CustomColors();
   final _minimumPadding = 5.0;
 

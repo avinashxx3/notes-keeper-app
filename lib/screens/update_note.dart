@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:notes_keeper/models/notes_list.dart';
-import 'package:notes_keeper/models/user_model.dart';
-import 'package:notes_keeper/services/auth.dart';
 import 'package:notes_keeper/services/database.dart';
 import 'package:notes_keeper/theme_data/custom_colors.dart';
-import 'package:provider/provider.dart';
-import 'notes.dart';
-import 'notes_grid.dart';
 
 class UpdateNotesData extends StatefulWidget {
+
   const UpdateNotesData({
     @required this.isDarkModeTrue,
     @required this.index,
@@ -28,6 +24,7 @@ class UpdateNotesData extends StatefulWidget {
 }
 
 class _UpdateNotesDataState extends State<UpdateNotesData> {
+
   CustomColors customColors = CustomColors();
 
   String isDarkModeTrue;

@@ -3,18 +3,22 @@ import 'package:notes_keeper/models/notes_list.dart';
 import 'package:notes_keeper/models/user_model.dart';
 
 class DatabaseService {
+
   final String uid;
   String noteId;
+
   DatabaseService({this.uid, this.noteId}){
-    print(noteId);
-    print(uid);
+    // print(noteId);
+    // print(uid);
   }
 
+  //function to delete data from server
   Future deleteNotesData() async{
     final CollectionReference notesCollection = FirebaseFirestore.instance.collection(uid.toString());
     return await notesCollection.doc(noteId).delete();
   }
 
+  //function to modify data in server
   Future updateNotesData(String heading, String content) async{
     final CollectionReference notesCollection = FirebaseFirestore.instance.collection(uid.toString());
     return await notesCollection.doc(noteId).update({
@@ -24,6 +28,7 @@ class DatabaseService {
     });
   }
 
+  //function to add new data to server
   Future addNotesData(String heading, String content) async{
     final CollectionReference notesCollection = FirebaseFirestore.instance.collection(uid.toString());
     return await notesCollection.add({

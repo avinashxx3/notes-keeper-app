@@ -8,6 +8,7 @@ import 'package:provider/provider.dart';
 import 'package:notes_keeper/services/database.dart';
 
 class CustomGridListView extends StatefulWidget {
+
   const CustomGridListView({@required this.isDarkModeTrue, @required this.customUser});
 
   final CustomUser customUser;
@@ -18,6 +19,7 @@ class CustomGridListView extends StatefulWidget {
 }
 
 class _CustomGridListViewState extends State<CustomGridListView> {
+
   CustomColors customColors = CustomColors();
 
   String isDarkModeTrue;

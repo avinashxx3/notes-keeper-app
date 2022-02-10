@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:notes_keeper/models/user_model.dart';
-import 'package:notes_keeper/services/auth.dart';
 import 'package:notes_keeper/services/database.dart';
 import 'package:notes_keeper/theme_data/custom_colors.dart';
 import 'package:provider/provider.dart';
-import 'notes.dart';
-import 'notes_grid.dart';
 
 class AddNotesPage extends StatefulWidget {
+
   const AddNotesPage({@required this.isDarkModeTrue, @required this.customUser});
   final CustomUser customUser;
   final isDarkModeTrue;
@@ -17,6 +15,7 @@ class AddNotesPage extends StatefulWidget {
 }
 
 class _AddNotesPageState extends State<AddNotesPage> {
+
   CustomColors customColors = CustomColors();
 
   String isDarkModeTrue;

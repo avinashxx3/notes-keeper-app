@@ -11,6 +11,7 @@ import 'package:notes_keeper/theme_data/theme_data.dart';
 import 'settings.dart';
 
 class HomePage extends StatefulWidget {
+
   final CounterStorage storage;
   HomePage({@required this.storage});
 

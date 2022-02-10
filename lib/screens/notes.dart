@@ -14,6 +14,7 @@ import 'package:notes_keeper/services/database.dart';
 import 'package:provider/provider.dart';
 
 class NotesPage extends StatefulWidget {
+
   const NotesPage(
       {@required this.isDarkModeTrue, @required this.storage, @required this.customUser});
 
@@ -26,6 +27,7 @@ class NotesPage extends StatefulWidget {
 }
 
 class _NotesPageState extends State<NotesPage> {
+
   CustomColors customColors = CustomColors();
   final _minimumPadding = 5.0;
 

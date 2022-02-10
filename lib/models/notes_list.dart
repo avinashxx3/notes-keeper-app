@@ -1,5 +1,3 @@
-
-
 class NotesData {
   String noteId;
   String heading;

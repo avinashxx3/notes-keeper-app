@@ -4,12 +4,14 @@ import 'package:permission_handler/permission_handler.dart';
 
 class CounterStorage {
   Future<String> get _localPath async {
-    final directory = await getExternalStorageDirectory();
 
+    //get storage directory from the android device
+    final directory = await getExternalStorageDirectory();
     return directory.path;
   }
 
   Future<void> writePermission() async {
+    //ask for write permission until given
     var status = await Permission.storage.request();
     if (status.isGranted) {
       return null;
@@ -17,15 +19,16 @@ class CounterStorage {
   }
 
   Future<File> get _localFile async {
+
     await writePermission();
     final path = await _localPath;
     final dirPath = path.toString() + '/themeData';
     await Directory(dirPath).create(recursive: true);
     return File(dirPath +'/themeStatus.txt');
-    //return File('/storage/emulated/0/Android/data/com.example.note_keeper/noteKeeper/data/themeStatus.txt');
   }
 
   Future<String> readFile() async {
+
     try {
       final file = await _localFile;
       // Read the file
@@ -39,6 +42,7 @@ class CounterStorage {
   }
 
   Future<File> writeFile(String isDarkModeTrue) async {
+
     final file = await _localFile;
     print("Written to themeStatus.txt File");
     // Write the file
