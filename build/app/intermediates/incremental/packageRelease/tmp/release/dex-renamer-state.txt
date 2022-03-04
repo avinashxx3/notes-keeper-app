@@ -1,0 +1,4 @@
+#Fri Mar 04 19:17:02 IST 2022
+base.0=E\:\\AndroidStudioProjects\\FlutterProjects\\notes_keeper\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
